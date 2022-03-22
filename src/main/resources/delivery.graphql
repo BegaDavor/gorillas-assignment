@@ -1,0 +1,22 @@
+schema {
+    query: Query,
+    mutation: Mutation
+}
+
+type Query {
+    getDeliveries(isDelivered: Boolean): [Delivery]
+}
+
+type Mutation {
+    changeDeliveryStatus(deliveryId: String, isDelivered: Boolean): Boolean
+}
+
+type Delivery {
+    deliveryId: String,
+    product: String,
+    supplier: String,
+    quantity: Int,
+    expectedDate: String,
+    expectedWarehouse: String,
+    isDelivered: Boolean
+}
