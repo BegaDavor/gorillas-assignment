@@ -6,8 +6,9 @@ Build application:
 Service starts on: 8081 port
 
 <h3>GraphQL schema, queries, mutations ant other types: </h3>
-
-`schema {
+<pre>
+<code>
+schema {
     query: Query,
     mutation: Mutation
 }
@@ -28,7 +29,9 @@ type Delivery {
     expectedDate: String,
     expectedWarehouse: String,
     isDelivered: Boolean
-}`
+}
+</code>
+</pre>
 
 <h3>API</h3>
 - endpoint: http://localhost:8081/deliveries
