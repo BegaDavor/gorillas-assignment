@@ -36,3 +36,5 @@ type Delivery {
 <h3>API</h3>
 - endpoint: http://localhost:8081/deliveries
 - method: POST
+
+The data from the json file is imported at the start of the application.
