@@ -3,7 +3,9 @@
 Build application:
 `mvn clean install -Dmaven.test.skip=true`
 
-GraphQL schema, queries, mutations ant other types: 
+Service starts on: 8081 port
+
+<h3>GraphQL schema, queries, mutations ant other types: </h3>
 
 `schema {
     query: Query,
@@ -28,3 +30,6 @@ type Delivery {
     isDelivered: Boolean
 }`
 
+<h3>API</h3>
+- endpoint: http://localhost:8081/deliveries
+- method: POST
